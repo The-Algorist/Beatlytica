@@ -3,15 +3,19 @@ variable "project" {
   type        = string
 }
 
+variable "credentials" {
+  default = "google_credentials.json"
+}
+
 variable "region" {
   description = "Your project region"
-  default     = "us-central1"
+  default     = "us-west4"
   type        = string
 }
 
 variable "zone" {
   description = "Your project zone"
-  default     = "us-central1-a"
+  default     = "us-west4-c"
   type        = string
 }
 

@@ -34,7 +34,7 @@ resource "google_compute_firewall" "port_rules" {
 
 resource "google_compute_instance" "kafka_vm_instance" {
   name                      = "beatlytica-kafka-instance"
-  machine_type              = "e2-standard-4"
+  machine_type              = "n2-standard-4"
   tags                      = ["kafka"]
   allow_stopping_for_update = true
 
@@ -55,7 +55,7 @@ resource "google_compute_instance" "kafka_vm_instance" {
 
 resource "google_compute_instance" "airflow_vm_instance" {
   name                      = "beatlytica-airflow-instance"
-  machine_type              = "e2-standard-4"
+  machine_type              = "n2-standard-4"
   allow_stopping_for_update = true
 
   boot_disk {
@@ -90,51 +90,6 @@ resource "google_storage_bucket" "bucket" {
 }
 
 
-resource "google_dataproc_cluster" "mulitnode_spark_cluster" {
-  name   = "beatlytica-multinode-spark-cluster"
-  region = var.region
-
-  cluster_config {
-
-    staging_bucket = var.bucket
-
-    gce_cluster_config {
-      network = var.network
-      zone    = var.zone
-
-      shielded_instance_config {
-        enable_secure_boot = true
-      }
-    }
-
-    master_config {
-      num_instances = 1
-      machine_type  = "e2-standard-2"
-      disk_config {
-        boot_disk_type    = "pd-ssd"
-        boot_disk_size_gb = 30
-      }
-    }
-
-    worker_config {
-      num_instances = 2
-      machine_type  = "e2-medium"
-      disk_config {
-        boot_disk_size_gb = 30
-      }
-    }
-
-    software_config {
-      image_version = "2.0-debian10"
-      override_properties = {
-        "dataproc:dataproc.allow.zero.workers" = "true"
-      }
-      optional_components = ["JUPYTER"]
-    }
-
-  }
-
-}
 
 resource "google_bigquery_dataset" "stg_dataset" {
   dataset_id                 = var.stg_bq_dataset
