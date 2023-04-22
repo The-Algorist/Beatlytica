@@ -1,4 +1,5 @@
 # Setup Airflow VM
+![beatlytica-airflow-instance drawio](https://user-images.githubusercontent.com/83602292/233760088-7e55498e-b9ce-4253-b8da-adb73f66405e.png)
 
 1.  Establish an SSH connection to the compute instance:
     
@@ -66,6 +67,7 @@ The setup has two dags
 -  `load_songs_dag`
 
 - Trigger first and only once to load a onetime song file into BigQuery
+![load-songs_dag](https://user-images.githubusercontent.com/83602292/233760184-ecc23632-3a37-4052-96c6-482963e36693.png)
 
 
 -  `beatlytica_dag`
@@ -74,6 +76,7 @@ The setup has two dags
 
 - This dag will run hourly at the 5th minute and perform transformations to create the dimensions and fact.
 
+![beatlytica_dag](https://user-images.githubusercontent.com/83602292/233760230-6cd74a98-c9f0-4751-8a8c-3c2d05f08a10.png)
 
 - DAG Flow -
 
