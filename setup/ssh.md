@@ -1,4 +1,4 @@
-# **VM SSH Setup**
+# VM SSH Setup
 
 ***To set up SSH access to the VM instances for the Beatlytica project, follow these steps:***
 
@@ -50,4 +50,3 @@
 ***Note that these steps will allow you to access the VMs via SSH, and you can use the same SSH keys and config file for future access.***
 
 **Tip:** *For a better understanding of how to set up SSH keys and connect to VM instances, I recommend watching the first few minutes of this video by Alexey: [https://www.youtube.com/watch?v=ae-CV2KfoN0&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb].*
-
