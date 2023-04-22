@@ -1,8 +1,10 @@
 # BEAT~LYTICA
 
-![logo](Architecture Images/Beat~lytica-logo.png)
-
 This project implements a real-time event streaming pipeline for a music streaming service, inspired by Spotify Wrapped and Billboard charts. The pipeline is powered by Apache Airflow, Apache Kafka, dbt, Docker, GCP, Spark-Streaming, and Terraform.
+
+![Beat~lytica-logo](https://user-images.githubusercontent.com/83602292/233754249-f2449127-213a-4263-8f5a-5ce6aab000d0.png)
+
+
 
 ## Table of Contents
 
