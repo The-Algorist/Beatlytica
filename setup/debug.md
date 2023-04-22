@@ -29,3 +29,5 @@
 ```bash
 sudo chmod -R 777 dbt/
 ```
+
+**Tip:** ***Other errors might be caused by lack of enough permissions especially when setting up infrastructure with terraform, follow the process as above to add the permissions causing the errors.***
