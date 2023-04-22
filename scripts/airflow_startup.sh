@@ -1,10 +1,10 @@
 #!/bin/bash
 
 echo "Changing permissions for dbt folder..."
-cd ~/beatlytica/ && sudo chmod -R 777 dbt
+cd ~/Beatlytica/ && sudo chmod -R 777 dbt
 
 echo "Building airflow docker images..."
-cd ~/beatlytica/airflow
+cd ~/Beatlytica/airflow
 docker-compose build
 
 echo "Running airflow-init..."
