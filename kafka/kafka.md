@@ -1,5 +1,7 @@
 # Set up Kafka VM
 
+![beatlytica-kafka-instance drawio](https://user-images.githubusercontent.com/83602292/233758394-2b69bd6b-873c-4606-bf67-b3f1b777f2dd.png)
+
 ***To set up Kafka and eventsim in two separate Docker processes in a dedicated compute instance, follow these steps:***
 
 1. Establish an SSH connection to the compute instance.
