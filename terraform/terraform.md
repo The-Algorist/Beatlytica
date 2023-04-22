@@ -50,3 +50,5 @@ terraform destroy
 ***Note that this will delete all resources created during the `terraform apply` step.***
 
 **Note:** *the infrastructure may have been provisioned with more computing resources than necessary. To test this, you can try reducing the instance sizes and observe the performance.*
+
+**Tip:** ***Other errors might be caused by lack of enough permissions especially when setting up infrastructure with terraform, follow the process as above to add the permissions causing the errors.***
