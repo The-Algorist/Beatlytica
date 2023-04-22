@@ -1,4 +1,5 @@
 # Setup Spark Cluster
+![beatlytica-spark-cluster drawio](https://user-images.githubusercontent.com/83602292/233758022-59a1e246-0c11-418b-92ee-c810755aa404.png)
 
 
 
