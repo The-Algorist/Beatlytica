@@ -1,4 +1,4 @@
-## VM SSH Setup
+# **VM SSH Setup**
 
 ***To set up SSH access to the VM instances for the Beatlytica project, follow these steps:***
 
