@@ -15,7 +15,7 @@ To setup the Spark cluster to communicate with the Kafka instance and start read
 
    ```bash
     git clone  https://github.com/The-Algorist/Beatlytica.git && \
-    cd  Beatlytica/spark-streaming
+    cd  Beatlytica/spark_streaming
    ```
 
 3. Set the following environment variables to specify the external IP address of the Kafka VM instance and the name of your GCS bucket (which you provided during the Terraform setup):
